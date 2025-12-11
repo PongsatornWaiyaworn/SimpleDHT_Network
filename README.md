@@ -11,7 +11,8 @@
 โหนดที่รับผิดชอบ key จะถูกคำนวณตามสูตร:
 
 $$
-\text{node\_owner\_index} = \text{sha1}( \text{key} ) \bmod \text{len(nodes)}
+\mathrm{node\_owner\_index}
+= \mathrm{sha1}(\mathrm{key}) \bmod \mathrm{len(nodes)}
 $$
 
 * **key**: ข้อมูลที่ต้องการจัดเก็บ/ดึง
