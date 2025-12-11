@@ -10,7 +10,10 @@
 
 โหนดที่รับผิดชอบ key จะถูกคำนวณตามสูตร:
 
-$$\text{node\_owner\_index} = \text{sha1}(\text{key}) \pmod{\text{len}(\text{nodes})}$$
+$$
+\text{node\_owner\_index}
+= \operatorname{sha1}(\text{key}) \bmod |\text{nodes}|
+$$
 
 * **key**: ข้อมูลที่ต้องการจัดเก็บ/ดึง
 * **sha1(key)**: ค่าแฮชของ key ที่ได้จาก SHA-1 (ในทางปฏิบัติ มักใช้ค่าแฮชตัวเลข)
