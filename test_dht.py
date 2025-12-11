@@ -14,16 +14,16 @@ def send(host, port, msg):
 def test_sequence():
     print("=== Distributed Hash Table Test ===")
 
-    print("\nTest 1: PUT('apple', 'red') → random node (7001)")
-    r1 = send("127.0.0.1", 7001, {
+    print("\nTest 1: PUT('apple', 'red') → random node (5000)")
+    r1 = send("127.0.0.1", 5000, {
         "type": "PUT",
         "key": "apple",
         "value": "red"
     })
     print("Response:", r1)
 
-    print("\nTest 2: GET('apple') from another node (7002)")
-    r2 = send("127.0.0.1", 7002, {
+    print("\nTest 2: GET('apple') from another node (5001)")
+    r2 = send("127.0.0.1", 5001, {
         "type": "GET",
         "key": "apple"
     })
@@ -38,7 +38,7 @@ def test_sequence():
     }
 
     for k, v in test_data.items():
-        resp = send("127.0.0.1", 7003, {
+        resp = send("127.0.0.1", 5002, {
             "type": "PUT",
             "key": k,
             "value": v
@@ -47,7 +47,7 @@ def test_sequence():
 
     print("\nอ่านกลับทั้งหมด (ยิงไปที่ node เดียว เพื่อทดสอบ routing):")
     for k in test_data.keys():
-        resp = send("127.0.0.1", 7001, {
+        resp = send("127.0.0.1", 5000, {
             "type": "GET",
             "key": k
         })

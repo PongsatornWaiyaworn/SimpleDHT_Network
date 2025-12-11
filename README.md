@@ -81,10 +81,10 @@ python test_dht.py
 ```
 === Distributed Hash Table Test ===
 
-Test 1: PUT('apple', 'red') → random node (7001)
+Test 1: PUT('apple', 'red') → random node (5000)
 Response: {"status": "OK"}
 
-Test 2: GET('apple') from another node (7002)
+Test 2: GET('apple') from another node (5001)
 Response: {"status": "OK", "value": "red"}
 
 Test 3: PUT/GET หลายค่าเพื่อดูการกระจาย
