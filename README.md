@@ -33,6 +33,9 @@ $$
 
 `Client → Node A (ไม่ใช่เจ้าของ) → Node B (เจ้าของ) → Node A → Client`
 
+> หากคุณอยากเห็น **ตัวอย่าง TCP** และเข้าใจการทำงานของระบบ Client/Server, สามารถดูได้ที่ GitHub ของโปรเจกต์นี้:  
+> [SimpleTCP Client-Server](https://github.com/PongsatornWaiyaworn/SimpleTCP_client-server.git)
+
 ### รูปแบบคำสั่งที่รองรับ
 
 * **PUT**: `{"type": "PUT", "key": "...", "value": "..."}`
