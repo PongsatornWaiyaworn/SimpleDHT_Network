@@ -132,3 +132,6 @@ GET(water) → {"status": "OK", "value": "blue"}
 | **Distributed Storage Systems** | เช่น IPFS (InterPlanetary File System) ใช้ DHT เพื่อแมป hash ของไฟล์ไปยังโหนดที่เก็บไฟล์ |
 | **Content Delivery Networks (CDN) แบบกระจาย** | ใช้ DHT จัดเก็บ metadata ของไฟล์/เนื้อหาเพื่อค้นหา node ที่เก็บไฟล์ใกล้ผู้ใช้งาน |
 | **Decentralized Applications (DApps)** | แอปพลิเคชันแบบกระจาย ใช้ DHT จัดการข้อมูลผู้ใช้และทรัพยากรโดยไม่ต้องมีเซิร์ฟเวอร์กลาง |
+
+> หากคุณอยากเห็น **ตัวอย่างการใช้ในงาน P2P** สามารถดูได้ที่ GitHub ของโปรเจกต์นี้:  
+> [Torrent_DHT](https://github.com/PongsatornWaiyaworn/Torrent_DHT.git)
